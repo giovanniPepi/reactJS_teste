@@ -2,6 +2,7 @@ import logo from "./logo.svg";
 import "./App.css";
 
 import MyComponent from "./MyComponent";
+import Clock from "./Clock";
 import { Component } from "react";
 
 class App extends Component {
@@ -35,12 +36,13 @@ class App extends Component {
   render() {
     return (
       <div>
-        <MyComponent title="Reaact title" onButtonClicked={this.onClickBtn} />
+        <MyComponent title="React title" onButtonClicked={this.onClickBtn} />
         <button onClick={this.countUp}>Click to trigger counter up</button>
         <button onClick={(e) => this.countDown(e)}>
           Click to trigger counter dowm
         </button>
         <p>{this.state.count}</p>
+        <Clock title="Current time: " />
       </div>
     );
   }
