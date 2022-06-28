@@ -4,6 +4,8 @@ import "./App.css";
 import MyComponent from "./MyComponent";
 import Clock from "./Clock";
 import { Component } from "react";
+import Hooks from "./Hooks";
+import ColorHook from "./ColorHook";
 
 class App extends Component {
   constructor(props) {
@@ -43,6 +45,8 @@ class App extends Component {
         </button>
         <p>{this.state.count}</p>
         <Clock title="Current time: " />
+        <ColorHook />
+        <Hooks />
       </div>
     );
   }
